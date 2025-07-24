@@ -6,7 +6,7 @@ function RenterDashboard() {
 
   useEffect(() => {
     const fetchAll = async () => {
-      const res = await fetch("http://househaunt.onrender.com/api/property/all");
+      const res = await fetch("https://househaunt.onrender.com/api/property/all");
       const data = await res.json();
       setProperties(data);
     };
