@@ -1,0 +1,70 @@
+/* src/pages/home.css */
+.home-container {
+  padding: 40px;
+  background: #ffe6f0;
+  text-align: center;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.app-title {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #6a1b9a;
+}
+
+.intro-section {
+  background: white;
+  padding: 30px;
+  margin: auto;
+  max-width: 700px;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.intro-section h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.intro-section p {
+  color: #555;
+  font-size: 16px;
+}
+
+.how-to-use {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.how-to-use h3 {
+  color: #6a1b9a;
+}
+
+.how-to-use ul {
+  padding-left: 20px;
+}
+
+.how-to-use li {
+  margin-bottom: 10px;
+}
+
+.button-group {
+  margin-top: 30px;
+}
+
+.button-group button {
+  padding: 10px 25px;
+  margin: 10px;
+  background-color: #9c27b0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button-group button:hover {
+  background-color: #7b1fa2;
+}
