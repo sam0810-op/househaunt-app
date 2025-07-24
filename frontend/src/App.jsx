@@ -15,6 +15,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/owner" element={<OwnerDashboard />} />
         <Route path="/renter" element={<RenterDashboard />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </Router>
   );
