@@ -14,7 +14,7 @@ function OwnerDashboard() {
   const [editId, setEditId] = useState(null);
 
   const fetchMyProps = async () => {
-    const res = await fetch(`http://localhost:5000/api/property/owner/${user._id}`);
+    const res = await fetch(`http://househaunt-backend.onrender.com/api/property/owner/${user._id}`);
     const data = await res.json();
     setMyProps(data);
   };
