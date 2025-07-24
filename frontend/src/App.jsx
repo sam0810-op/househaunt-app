@@ -8,7 +8,7 @@ import RenterDashboard from './pages/renter';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/househaunt-app">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
