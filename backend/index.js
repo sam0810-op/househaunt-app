@@ -16,6 +16,9 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/property', propertyRoutes);
 
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => app.listen(5000, () => console.log('Server running ✅')))
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => {
+    const PORT = process.env.PORT || 5000;
+    app.listen(PORT, () => console.log(`Server running on port ${PORT} ✅`));
+  })
   .catch(err => console.log(err));
