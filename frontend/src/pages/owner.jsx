@@ -14,7 +14,7 @@ function OwnerDashboard() {
   const [editId, setEditId] = useState(null);
 
   const fetchMyProps = async () => {
-    const res = await fetch(`https://househaunt.onrender.com/api/property/owner/${user._id}`);
+    const res = await fetch(`https://househaunt-app.onrender.com/api/property/owner/${user._id}`);
     const data = await res.json();
     setMyProps(data);
   };
@@ -25,8 +25,8 @@ function OwnerDashboard() {
 
   const handleAdd = async () => {
     const endpoint = editId
-      ? `https://househaunt.onrender.com/api/property/${editId}`
-      : `https://househaunt.onrender.com/api/property/add`;
+      ? `https://househaunt-app.onrender.com/api/property/${editId}`
+      : `https://househaunt-app.onrender.com/api/property/add`;
     const method = editId ? 'PUT' : 'POST';
 
     await fetch(endpoint, {
@@ -52,7 +52,7 @@ function OwnerDashboard() {
   };
 
   const handleDelete = async (id) => {
-    await fetch(`https://househaunt.onrender.com/api/property/${id}`, { method: 'DELETE' });
+    await fetch(`https://househaunt-app.onrender.com/api/property/${id}`, { method: 'DELETE' });
     fetchMyProps();
   };
 
