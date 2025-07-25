@@ -17,5 +17,5 @@ app.use('/api/auth', authRoutes);
 app.use('/api/property', propertyRoutes);
 
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => app.listen(5000, () => console.log('Server running on http://localhost:5000')))
+  .then(() => app.listen(5000, () => console.log('Server running ✅')))
   .catch(err => console.log(err));
